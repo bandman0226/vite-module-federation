@@ -1,10 +1,10 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import federation from '@originjs/vite-plugin-federation';
 
 export default defineConfig({
     plugins: [
         federation({
-            name: 'remote_App',
+            name: 'remote',
             filename: 'remoteEntry.js',
             exposes: {
                 './RemoteElement': './src/remote-element.ts',
@@ -14,8 +14,8 @@ export default defineConfig({
     ],
     build: {
         modulePreload: false,
-        target: "esnext",
+        target: 'esnext',
         minify: false,
         cssCodeSplit: false
-    },
-})
+    }
+});
