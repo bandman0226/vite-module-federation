@@ -23,10 +23,15 @@ export class Shell extends LitElement {
   @property({ type: Number })
   count = 0
 
+  async firstUpdated() {
+    // @ts-ignore
+    await import('remote/RemoteElement');
+  }
+
   render() {
     return html`
       <div>
-        <RemoteElement></RemoteElement>
+        <remote-element></remote-element>
         <a href="https://vite.dev" target="_blank">
           <img src=${viteLogo} class="logo" alt="Vite logo" />
         </a>
