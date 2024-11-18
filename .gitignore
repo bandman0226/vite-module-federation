@@ -1,6 +1,21 @@
 ### Example user template template
 ### Example user template
 
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
 # IntelliJ project files
 .idea
 *.iml
