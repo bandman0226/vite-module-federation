@@ -4,7 +4,7 @@ import federation from '@originjs/vite-plugin-federation';
 export default defineConfig({
     plugins: [
         federation({
-            name: 'remote',
+            name: 'litremote',
             filename: 'remoteEntry.js',
             exposes: {
                 './RemoteElement': './src/remote-element.ts',

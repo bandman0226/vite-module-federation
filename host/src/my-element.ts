@@ -24,7 +24,6 @@ export class Shell extends LitElement {
   count = 0
 
   async firstUpdated() {
-    // @ts-ignore
     await import('remote/RemoteElement');
   }
 
